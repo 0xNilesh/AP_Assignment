@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__left">
+            &nbsp;
+        </div>
+        
+        <div class="form-wrap">
+        <h1 class="heading margin-bottom">Registration Info</h1>
+        
+        <form action="form.php" method="POST">
+          <div class="form-group">
+            <label for="first-name"></label>
+            <input type="text" name="firstName" class="form-input" id="first-name" placeholder="First Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="last-name"></label>
+            <input type="text" name="lastName" class="form-input" id="last-name" placeholder="Last Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" name="email" class="form-input" id="email" placeholder="Email" required>
+          </div>
+          
+          <div class="form-group margin-bottom">
+            <label for="password"></label>
+            <input type="password" name="password" class="form-input" id="password" placeholder="Password" minlength="8" required>
+          </div>
+          
+          <button type="submit" name ="submit" class="btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+</body>
