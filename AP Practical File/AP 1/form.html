@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> My Form </title>
+    </head>
+    
+    <body>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Personal Information :</legend>
+        <p>
+            <label for="name">Name :</label> 
+            <input type="text" name="name" id="name" maxlength="20" autofocus required placeholder="Your Name">
+        </p>
+            <p>
+            <label for="number">Mob:</label>
+            <input type="number" name="number" id="number" maxlength="10" placeholder="Mobile Number" required >
+                </p>
+                <p>
+            <label for="Address">Address :</label><br>
+            <textarea rows="10" cols="20" name="Address" id="Address" placeholder="Your Address" required></textarea>
+                </p>
+            <p>
+            <label for="male">Gender : <br>   Male</label>
+            <input type="radio" name="gender" id="male">
+              <br>  
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <br>
+            <label for="others">Others</label>
+            <input type="radio" name="gender" id="others">
+                </p>
+            <label for="color">Favourite color :</label>
+            <input type="color" name="color" id="color">
+            <p>
+            <label for="email">E-mail Id :</label>
+            <input type="email" placeholder="name@domain.com" name="email" id="email" required>
+                </p>
+            <label for="pswd">Password :</label>
+            <input type="password" name="password" id="pswd" required>
+            <p>
+            <label for="dob">D.O.B :</label>
+                <input type="date" name="dob" id="dob" required>
+                </p>
+                <fieldset>
+                    <legend><h3>Feedback for our Website :</h3></legend>
+                <label>Rate our site : </label>
+                <select name=Rating>
+                    <option selected>Amazing</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                    <option>Awful</option>
+                </select>
+                    </fieldset>
+            <br>
+            <input type="submit" onclick="alert('Details are successfully submitted.')" value=Submit>
+            <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
